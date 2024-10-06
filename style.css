@@ -1,0 +1,317 @@
+/******************************************************************************
+START Custom Styles
+******************************************************************************/
+
+/* Custom CSS Variables */
+:root {
+  --color-light-gray: #F6F6F6;
+  --color-background: #F4F4F4;
+  --color-border: #E6E6E6;
+  --color-text-accent: #B89C7D;
+  --color-button: #A67565;
+  --color-highlight: #C5A15B;
+  --color-deep-accent: #9B6F6F;
+}
+
+
+body {
+  font-family: HK Grotesk, sans-serif;
+  background-color: var(--color-background);
+  margin: 0;
+  padding: 0;
+}
+
+
+.wrapper {
+  min-height: 87vh; 
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.header, .footer {
+  background-color: var(--color-light-gray);
+}
+
+
+.title {
+  font-size: 3rem;
+  background-size: contain; 
+  color: var(--color-text-accent); 
+  text-align: center; 
+  padding: 1rem; 
+  width: 100%;
+  display: block;
+}
+
+/* Buttons */
+.button {
+  background-color: var(--color-button);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.accent {
+  color: var(--color-text-accent);
+}
+
+.border {
+  border-color: var(--color-border);
+}
+
+.highlight {
+  background-color: var(--color-highlight);
+}
+
+.deep-accent {
+  color: var(--color-deep-accent);
+}
+
+
+.novel img {
+  width: 100%; 
+  height: auto; 
+  max-width: none; 
+  object-fit: cover; 
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  overflow: hidden;
+  width: 300px; 
+}
+
+.card-img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem; 
+  margin: 0;
+  color: var(--color-text-accent);
+}
+
+.card-text {
+  font-size: 1rem;
+  color: var(--color-deep-accent);
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+#destination-list {
+    list-style: none;
+    padding: 0;
+}
+
+
+#destination-list li {
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 30px; 
+}
+
+
+#destination-list li img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+#destination-list li p {
+    font-size: 1.1em;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+
+.destination-page {
+  background-image: url('https://wallpapers.com/images/featured/beautiful-3vau5vtfa3qn7k8v.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+ 
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: overlay;
+}
+
+.dark-mode body {
+  background-color: #121212;
+}
+
+.dark-mode h1, .dark-mode nav a, .dark-mode p {
+  color: White;
+}
+
+
+#darkModeButton {
+  background-color: var(--color-button); 
+  color: white; 
+  padding: 10px 20px;
+  border: none; 
+  border-radius: 5px; 
+  font-size: 1rem; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  font-weight: bold; 
+  display: inline-block; 
+}
+
+
+/* New CSS for layout and image display */
+.destination-item {
+    display: flex;
+    margin-bottom: 30px; 
+}
+
+.text-container {
+    flex: 1; 
+    padding-right: 20px; 
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; 
+    flex: 1;
+}
+
+.gallery img {
+    width: 150px; 
+    height: auto;
+    margin: 5px; 
+    cursor: pointer; 
+}
+
+/* New Pricing Card Styles */
+.pricing-card {
+  background-color: var(--color-light-gray);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Adjust as needed */
+  padding: 1rem;
+  text-align: center;
+}
+
+.pricing-card h2 {
+  color: var(--color-text-accent);
+}
+
+.price {
+  font-size: 1.5rem;
+  color: var(--color-highlight);
+}
+
+button {
+  background-color: var(--color-button);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--color-deep-accent);
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid var(--color-border);
+  text-align: left;
+}
+
+th {
+  background-color: var(--color-highlight);
+  color: white;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* New Card Container for Plans Page */
+.plans-card-container {
+    display: flex;                 
+    justify-content: space-around; 
+    flex-wrap: nowrap;            
+    padding: 1rem;
+    gap: 1rem;                     
+    background-color: rgba(173, 216, 230, 0.8); 
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+.plans-card-container .card {
+    flex: 1;                       /* Allow cards to grow equally */
+    max-width: 300px;             /* Ensure cards have a max width */
+    margin: 0 10px;               /* Optional: Adjust margins */
+}
+
+nav a {
+  margin: 0 1rem; 
+  color: black;
+  text-decoration: none; 
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+nav a:hover {
+  background-color: var(--color-button); 
+  color: white;
+}
+
+
+
+/******************************************************************************
+END Custom Styles
+******************************************************************************/
