@@ -56,10 +56,6 @@ Key Features:
 10. Tables: Styled with padding, borders, and hover effects for a clean, modern look.
 11. Navigation Links: Transition effects applied to hover states, with padding and border-radius for a button-like feel.
 
-## W3C Validations link:
-
-- for front-page HTML: https://validator.w3.org/nu/?doc=https%3A%2F%2Frogue-sudden-lemon.glitch.me%2Findex.html
-- for front-page CSS: https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Frogue-sudden-lemon.glitch.me%2Findex.html#textarea
 
 ## Javascript code to add interactivity:
 
